@@ -1,5 +1,4 @@
 
-//function
 function increaseAmount(id, priceId, price){
     var userQuantityInput = document.getElementById(id).value;
     userQuantityInput = +userQuantityInput;
@@ -21,10 +20,6 @@ function subtotalAmount() {
     document.getElementById("subtotal").innerText = price1 + price2;
 }
 
-
-
-
-
 function decreaseAmount(id, priceId, price) {
     var userQuantityInput = document.getElementById(id).value;
     userQuantityInput = +userQuantityInput;
@@ -37,16 +32,6 @@ function decreaseAmount(id, priceId, price) {
     }
     subtotalAmount();
 }
-
-
-
-
-
-
-
-
-
-
 
 var increaseBtn1 = document.getElementById("increase-1");
 increaseBtn1.addEventListener("click", function(){
@@ -70,17 +55,6 @@ var decreaseBtn2 = document.getElementById("decrease-2");
 decreaseBtn2.addEventListener("click", function(){
     decreaseAmount("quantity-2", "price-2", 59); 
 })
-
-
-
-
-
-
-
-
-
-
-
 
 
 function removeProduct(id, existPrice){
